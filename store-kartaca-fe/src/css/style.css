@@ -1,0 +1,21 @@
+
+.input-group {
+  padding: 10px;
+}
+
+.custom-text-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: border-bottom-color 0.25s ease-in-out;
+}
+
+.custom-text-input:focus {
+  outline: none;
+  border-bottom-color: #007bff;
+}
+
+.login-btn, .register-btn {
+  margin-top: 20px;
+}

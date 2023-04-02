@@ -1,0 +1,64 @@
+
+---------------------------------------
+Reference: https://tr.reactjs.org/docs/create-a-new-react-app.html
+
+Step 1: 
+Run in terminal (I used store-kartaca-fe instad of my-app):
+
+>> npx create-react-app my-app
+>> cd my-app
+>> npm start
+---------------------------------------
+Step 2: Configure urls to point pages
+Reference: https://medium.com/@tejozarkar/react-routing-in-3-simple-steps-functional-programming-87fec3d82d90
+
+Install new library from terminal: 
+>> npm install react-router-dom
+
+Update Index.js as in Step 2 in the reference link
+Update App.js as in Step 2 in the reference link
+---------------------------------------
+Step 3:
+Install new library for Button and Form components:
+>> npm install reactstrap
+---------------------------------------
+Step 4: Create Register page
+---------------------------------------
+Step 5 : Create Login page
+---------------------------------------
+Step 6: Create Home page (Bu ürünler dinamik veya statik olarak sunulabilir.)
+---------------------------------------
+Step 7: Create Logout button
+---------------------------------------
+
+Questions / Answers:
+
+1 - How is react folder structure?
+https://blog.webdevsimplified.com/2022-07/react-folder-structure/
+
+2 - How to create reusable input field?
+https://stackoverflow.com/a/65410038
+
+3 - How handeChange works?
+https://sebhastian.com/handlechange-react/ 
+
+4 - How to create a url to point a page?
+https://medium.com/@tejozarkar/react-routing-in-3-simple-steps-functional-programming-87fec3d82d90
+
+5 - How to send a POST request in react js?
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#uploading_json_data
+
+6 - How to track login status with session?
+https://www.permify.co/post/jwt-authentication-in-react 
+
+7 - How to redirect to another page?
+https://www.codeconcisely.com/posts/react-navigation/#using-navigate-component
+
+8 - How to check response code?
+https://stackoverflow.com/a/39766712
+
+9 - How to check session to decide to redirect to another page or not?
+https://stackoverflow.com/a/71080676
+
+9.1 How to fix useHistory was not found error?
+https://stackoverflow.com/a/66971821
