@@ -1,0 +1,13 @@
+
+Questions / Answers:
+1 - How to run a fast api app?
+>> uvicorn main:app --reload
+
+2 - How to create a post endpoint and map the incoming request body into a class object values?
+https://realpython.com/fastapi-python-web-apis/#use-pydantic-to-declare-json-data-models-data-shapes
+
+3 - How to fix CORS error?
+https://stackoverflow.com/a/66460861
+
+4 - How to return error response like 400 bad request or 401 unauthorized?
+https://fastapi.tiangolo.com/tutorial/handling-errors/#install-custom-exception-handlers
