@@ -62,3 +62,9 @@ https://stackoverflow.com/a/71080676
 
 9.1 How to fix useHistory was not found error?
 https://stackoverflow.com/a/66971821
+
+10 - How to constantly retrieve changes on server side?
+https://medium.com/vacatronics/how-to-use-websocket-with-fastapi-8460db1c074
+
+11 - How to dockerize react app?
+https://jsramblings.com/dockerizing-a-react-app/

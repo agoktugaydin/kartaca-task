@@ -1,12 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import TextInput from "../components/TextInput";
 import { Form, Button } from "reactstrap";
 import { LOGIN_URL } from "../constants";
 
 const Login = () => {
+
+    // to track user's email password changes
     const [textInputValue, setTextInputValue] = useState({ email: "", password: "" });
     const { email, password } = textInputValue;
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setTextInputValue((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+        console.log(textInputValue);
+    };
+
 
     const navigate = useNavigate();
 
@@ -18,14 +29,7 @@ const Login = () => {
         }
     }, [navigate]);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setTextInputValue((prev) => ({
-            ...prev,
-            [name]: value,
-        }));
-        console.log(textInputValue);
-    };
+
 
     const handleLoginButton = (e) => {
         e.preventDefault();
@@ -85,6 +89,11 @@ const Login = () => {
             <Button className="login-btn" color="primary" onClick={handleLoginButton}>
                 Login
             </Button>{" "}
+
+            <Link to="/register">
+                <Button color="secondary">Register</Button>
+            </Link>
+
         </Form>
     );
 };

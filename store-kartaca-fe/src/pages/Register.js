@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import TextInput from "../components/TextInput";
 import { Form, Button } from "reactstrap";
 import { REGISTER_URL } from "../constants";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Register = () => {
     const [textInputValue, setTextInputValue] = useState({ name: "", surname: "", email: "", password: "" });
@@ -105,6 +105,10 @@ const Register = () => {
             <Button className="register-btn" color="primary" onClick={handleRegisterButton}>
                 Register
             </Button>{" "}
+            <Link to="/login">
+                <Button color="secondary">Login</Button>
+            </Link>
+
         </Form>
     );
 };

@@ -5,6 +5,7 @@ from model.login_model import LoginModel
 from model.register_model import RegisterModel
 from constants import LOGIN_ENDPOINT, REGISTER_ENDPOINT, LOGOUT_ENDPOINT
 from db.db import REGISTERED_USERS, TOKEN_EMAIL_PAIRS
+
 import uuid
 
 class AuthController:
@@ -35,9 +36,9 @@ class AuthController:
         async def logout(token: str = Header(None)):
 
             if token is None:
-                raise HTTPException(status_code=401, detail="Missing access token")
+                raise HTTPException(status_code=401, detail="No token provided")
             if token not in TOKEN_EMAIL_PAIRS.keys():
-                raise HTTPException(status_code=401, detail="Invalid access token")
+                raise HTTPException(status_code=401, detail="Invalid token provided")
 
             TOKEN_EMAIL_PAIRS.pop(token)
 
