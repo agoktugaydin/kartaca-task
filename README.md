@@ -22,7 +22,7 @@ To run it, the following command is used in the home directory:
 FastAPI
 
 To run it, the following command is used in the home directory:
-- uvicorn main:app --reload --8080
+- uvicorn main:app --reload --port 8080
 
 ### Missing
 
